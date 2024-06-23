@@ -7,12 +7,8 @@ const sumAll = function(start, stop) {
         stop = temp;
     }
 
-    if(start<0 || stop<0){
+    if(start<0 || stop<0 || typeof(start)!=="number" || typeof(stop)!=="number"){
         return "ERROR"
-    }
-
-    else if(stop!=Number){
-         return "ERROR"
     }
     
     else{
